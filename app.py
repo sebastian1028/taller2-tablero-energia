@@ -46,7 +46,7 @@ def plot_series(data, initial_date, proy):
             x=data_plot.index,
             y=data_plot['forecast'],
             mode='lines',
-            line=dict(color="#bbffeb",),
+            line=dict(color="#f4d44d", dash="dash"),
         ),
         go.Scatter(
             name='Upper Bound',
