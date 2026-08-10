@@ -13,7 +13,7 @@ app = dash.Dash(
     __name__,
     meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
 )
-app.title = "Tablero de energia - Taller 2"
+app.title = "Pronóstico de producción energética - Austria"
 
 server = app.server
 app.config.suppress_callback_exceptions = True
@@ -78,7 +78,7 @@ def plot_series(data, initial_date, proy):
             xanchor="right",
             x=1
         ),
-        yaxis_title='Demanda de energía (MW)',
+        yaxis_title='Demanda total (MW)',
         #title='Continuous, variable value error bars',
         hovermode="x"
     )
@@ -103,7 +103,7 @@ def description_card():
             html.H3("Pronóstico de producción energética"),
             html.Div(
                 id="intro",
-                children="Esta herramienta contiene información sobre la demanda energética total en Austria cada hora según lo públicado en ENTSO-E Data Portal. Adicionalmente, permite realizar pronósticos hasta 5 dias en el futuro."
+                children="Esta herramienta contiene información sobre la demanda energética total en Austria cada hora según lo publicado en ENTSO-E Data Portal. Adicionalmente, permite realizar pronósticos hasta 5 días en el futuro."
             ),
         ],
     )
