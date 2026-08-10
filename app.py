@@ -78,7 +78,7 @@ def plot_series(data, initial_date, proy):
             xanchor="right",
             x=1
         ),
-        yaxis_title='Demanda total [MW]',
+        yaxis_title='Demanda total (MW)',
         #title='Continuous, variable value error bars',
         hovermode="x"
     )
